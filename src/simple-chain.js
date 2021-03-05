@@ -17,16 +17,16 @@ const chainMaker = {
     }
   },
   reverseChain() {
-    this.chain.reverse();
+    this.chainOutput.reverse();
     return this;
   },
   finishChain() {
 
-    let result = this.chain.join('~~');
-    this.chain = [];
+    let result = this.chainOutput.join('~~');
+    this.chainOutput = [];
     return result;
   }
 };
 module.exports = chainMaker;
 
-
+//npm test test/simple-chain.test.js
